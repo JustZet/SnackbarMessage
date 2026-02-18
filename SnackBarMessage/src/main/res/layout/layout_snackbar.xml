@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        app:strokeWidth="0dp"
+        app:cardElevation="6dp"
+        android:layout_marginVertical="12dp"
+        app:cardBackgroundColor="?colorSurfaceContainer"
+        android:layout_marginHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:minHeight="34dp"
+                    android:text="sdadad"
+                    android:layout_weight="1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnActionSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="hello"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:minWidth="0dp"
+                    android:textColor="@color/red_dark"
+                    android:backgroundTint="@color/transparent"
+                    android:elevation="0dp"
+                    app:elevation="0dp"
+                    android:paddingHorizontal="0dp"
+                    android:paddingStart="0dp"
+                    android:padding="0dp"
+                    android:minHeight="0dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hello"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:minWidth="0dp"
+                    android:textColor="@color/red_dark"
+                    android:backgroundTint="@color/md_surface"
+                    android:elevation="0dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:padding="4dp"
+                    app:cornerRadius="8dp"
+                    android:minHeight="0dp"
+                    android:layout_marginHorizontal="4dp"
+                    />
+                <ImageView
+                    android:id="@+id/ivDismiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel"/>
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/lpiLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

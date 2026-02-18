@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">40dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:paddingVertical">14dp</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="backgroundTint">?colorPrimary</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:outlineSpotShadowColor">?colorPrimary</item>
+    </style>
+
+</resources>

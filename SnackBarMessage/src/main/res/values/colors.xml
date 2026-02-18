@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_dark">#B30000</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange_dark">#CD7100</color>
+    <color name="green_checked">#30804D</color>
+    <color name="baby_blue">#2196E9</color>
+    <color name="md_surface">#F6F6F6</color>
+</resources>
