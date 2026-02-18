@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.devmob.messagesnackbar'
+    namespace = 'com.devmob.messagesnackbar'
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -41,4 +41,6 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+    implementation 'com.github.JustZet:LanguagePicker:1.0.6'
+//    implementation 'com.github.JustZet:SnackbarMessage:1.0.0'
 }

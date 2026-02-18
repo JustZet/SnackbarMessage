@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.devmob.snackbarmessage'
+    namespace = 'com.devmob.snackbarmessage' // ✅ use =
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,25 +11,24 @@ android {
     }
 
     defaultConfig {
-        minSdk 26
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+        minSdk = 26 // ✅ use =
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" // ✅ use =
+        consumerProguardFiles("consumer-rules.pro") // ✅ can also use method call
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled = false // ✅ use =
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11 // ✅ use =
+        targetCompatibility = JavaVersion.VERSION_11 // ✅ use =
     }
     buildFeatures {
-        viewBinding true
-//        compose true
+        viewBinding = true // ✅ use =
+//        compose = true
     }
 }
 
